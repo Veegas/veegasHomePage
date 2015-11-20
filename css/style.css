@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Bitter', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width: 100%;
+  overflow-x:  hidden;
+}
+/*NAVIGATION*/
+nav {
+    height: 75px;
+    border-bottom: 1px solid #efefef;
+    background-color: #fff;
+    overflow: hidden;
+}
+.med-nav {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: height .2s;
+}
+nav .logo {
+    float: left;
+    display: inline-block;
+    line-height: 69px;
+    -webkit-transition: line-height .2s;
+    -moz-transition: line-height .2s;
+    transition: line-height .2s;
+}
+.logo img {
+  width: 70%;
+  height: auto;
+}
+.carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #272727;
+    border-radius: 2px;
+}
+.card-hover:hover {
+     box-shadow: 0 2px 5px 0 #00BBFF, 0 2px 10px 0 #00BBFF;
+}
+
+.card .title {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card .content {
+    padding: 1.3rem;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 1.3rem;
+}
+
+.card a {
+    color: #ffab40;
+    margin-right: 1.3rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.card .image {
+    position: relative;
+}
+
+.card .image .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.3rem;
+    color: #fff;
+}
+
+.card .image img {
+    border-radius: 2px 2px 0 0;
+}
+.cards-container {
+  padding: 3% 0;
+}
+.partners-container {
+    background-color: #EDEDED;
+}
+.partners-logos img{
+  width: 100%;
+  height: auto;
+}
+
+.sponsors-games img{
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #888888;
+}
+.cards-container-title {
+  margin-bottom: 2%;
+}
+.leaderboard-card:nth-child(odd) {
+  background-color: #EDEDED;
+}
+.leaderboard-card {
+  position: relative;
+  margin: 1% 0;
+}
+.leaderboard-img img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
+  margin: 5% 0;
+}
+.valign-middle {
+    display: flex;
+    align-items: baseline;
+}
+.user-profile {
+
+}
+
