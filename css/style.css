@@ -1,28 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
-@import url(https://fonts.googleapis.com/css?family=Bitter);
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Bitter', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', sans-serif;
 }
+
 p {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 body {
-  width: 100%;
-  overflow-x:  hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+
 /*NAVIGATION*/
+
 nav {
     height: 75px;
     border-bottom: 1px solid #efefef;
     background-color: #fff;
     overflow: hidden;
 }
+
 .med-nav {
     z-index: 99;
     position: fixed;
     width: 100%;
     transition: height .2s;
 }
+
 nav .logo {
     float: left;
     display: inline-block;
@@ -31,22 +43,26 @@ nav .logo {
     -moz-transition: line-height .2s;
     transition: line-height .2s;
 }
+
 .logo img {
-  width: 70%;
-  height: auto;
+    width: 70%;
+    height: auto;
 }
-.carousel-slide img{
+
+.carousel-slide img {
     width: 100%;
     height: auto;
 }
+
 .card {
     overflow: hidden;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #272727;
     border-radius: 2px;
 }
+
 .card-hover:hover {
-     box-shadow: 0 2px 5px 0 #00BBFF, 0 2px 10px 0 #00BBFF;
+    box-shadow: 0 2px 5px 0 #00ACEE, 0 2px 10px 0 #00ACEE;
 }
 
 .card .title {
@@ -93,18 +109,21 @@ nav .logo {
 .card .image img {
     border-radius: 2px 2px 0 0;
 }
+
 .cards-container {
-  padding: 3% 0;
+    padding: 3%;
 }
+
 .partners-container {
     background-color: #EDEDED;
 }
-.partners-logos img{
-  width: 100%;
-  height: auto;
+
+.partners-logos img {
+    width: 100%;
+    height: auto;
 }
 
-.sponsors-games img{
+.sponsors-games img {
     width: 8rem;
     height: 8rem;
     display: block;
@@ -113,27 +132,229 @@ nav .logo {
     border-radius: 50%;
     box-shadow: 2px 2px 5px #888888;
 }
+
 .cards-container-title {
-  margin-bottom: 2%;
+    margin-bottom: 2%;
 }
+
 .leaderboard-card:nth-child(odd) {
-  background-color: #EDEDED;
+    background-color: #EDEDED;
 }
+
 .leaderboard-card {
-  position: relative;
-  margin: 1% 0;
+    position: relative;
+    margin: 1% 0;
 }
+
 .leaderboard-img img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 50%;
-  margin: 5% 0;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 5% 0;
 }
+
 .valign-middle {
     display: flex;
     align-items: baseline;
 }
-.user-profile {
 
+.custom-meter {
+    height: 100%;
+    display: block;
+    background-color: #D50758;
+}
+.milestone-meter {
+  transition: width 0.3s;
 }
 
+.progress {
+    background-color: #cacaca;
+    height: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+}
+
+.completed {
+    background-color: #62A608;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.projects-row {
+    clear: both;
+    color: #B2B8DB;
+    font-weight: 500;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+    *zoom: 1;
+}
+
+.project-container {
+    position: relative;
+    top: 75px;
+    padding-top: 3%;
+}
+
+.project-description-container {
+    padding: 0 4%;
+}
+
+.project-details-container {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    padding-top: 2%;
+}
+
+.project-details-wrapper {
+    padding: 0 3%;
+}
+
+.title-wrapper {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+.path-container {
+    margin-top: 10%;
+}
+
+.path {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: #B2B8DB;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.milestone {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    border: solid 5px #62A608;
+    transform: translate(-50%, -50%);
+    top: 4px;
+    transition: all 0.3s;
+}
+
+.milestone.completed {
+    background-color: #62A608;
+}
+
+.milestone-target {
+    position: relative;
+    top: 120%;
+    left: -25%;
+    font-weight: bolder;
+    color: #E14A85;
+    font-size: 2em;
+}
+.milestone-upper-text {
+  font-size: 1em;
+}
+
+.image-container {
+    margin-bottom: 5%;
+}
+
+.description-container {
+    font-size: 1.2em;
+}
+
+.rewards-container {}
+
+.accordion.rewards .accordion-navigation > .content.active,
+.accordion dd > .content.active {
+    background: #FCFCFC;
+    border: #F1F1F1 solid 2px;
+}
+.image-container .play:before {
+    content: "";
+    background-color: rgba(0,0,0,.3);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    z-index: 30;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s;
+}
+.image-container .play {
+  cursor: pointer;
+}
+.image-container .play:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgba(255,255,255,.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    right: 0;
+    margin: auto;
+    z-index: 31;
+    -webkit-transition: border-color .2s;
+    -moz-transition: border-color .2s;
+    transition: border-color .2s;
+}
+.image-container .play:hover:before {
+  background-color: rgba(255,255,255,.8);
+}
+.image-container .play:hover:after {
+  border-left: 25px solid #01BBFF;
+}
+.frame-hidden {
+  display: none;
+}
+.pledge-button, .pledge-button:focus, .pledge-button:visited {
+  background-color: rgba(0, 172, 238, 0.8);
+  box-shadow: 0 6px rgba(0, 172, 238, 1);
+  transition: all 0.05s ease-in-out;
+}
+.pledge-button:hover {
+  background-color: rgba(213, 7, 88, 0.8);
+  box-shadow: 0 6px rgba(213, 7, 88, 1);
+}
