@@ -133,7 +133,22 @@ nav .logo {
     display: flex;
     align-items: baseline;
 }
-.user-profile {
-
+.custom-meter {
+  height: 100%;
+  display: block;
+  background-color: #D50758;
 }
-
+.bold {
+  font-weight: bold;
+}
+.projects-row {
+  clear: both;
+  color: #B2B8DB;
+  font-weight: 500;
+}
+.projects-left {
+  float: left;
+}
+.projects-right {
+  float: right;
+}
