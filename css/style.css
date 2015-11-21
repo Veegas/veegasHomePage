@@ -163,6 +163,9 @@ nav .logo {
     display: block;
     background-color: #D50758;
 }
+.milestone-meter {
+  transition: width 0.3s;
+}
 
 .progress {
     background-color: #cacaca;
@@ -222,7 +225,7 @@ nav .logo {
 }
 
 .project-description-container {
-    padding: 4%;
+    padding: 0 4%;
 }
 
 .project-details-container {
@@ -248,10 +251,10 @@ nav .logo {
 
 .path {
     position: relative;
-    height: 4px;
+    height: 5px;
     width: 100%;
     background-color: #B2B8DB;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     margin-top: 30px;
 }
 
@@ -264,6 +267,7 @@ nav .logo {
     border: solid 5px #62A608;
     transform: translate(-50%, -50%);
     top: 4px;
+    transition: all 0.3s;
 }
 
 .milestone.completed {
@@ -277,6 +281,9 @@ nav .logo {
     font-weight: bolder;
     color: #E14A85;
     font-size: 2em;
+}
+.milestone-upper-text {
+  font-size: 1em;
 }
 
 .image-container {
@@ -293,4 +300,61 @@ nav .logo {
 .accordion dd > .content.active {
     background: #FCFCFC;
     border: #F1F1F1 solid 2px;
+}
+.image-container .play:before {
+    content: "";
+    background-color: rgba(0,0,0,.3);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    z-index: 30;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s;
+}
+.image-container .play {
+  cursor: pointer;
+}
+.image-container .play:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgba(255,255,255,.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    right: 0;
+    margin: auto;
+    z-index: 31;
+    -webkit-transition: border-color .2s;
+    -moz-transition: border-color .2s;
+    transition: border-color .2s;
+}
+.image-container .play:hover:before {
+  background-color: rgba(255,255,255,.8);
+}
+.image-container .play:hover:after {
+  border-left: 25px solid #01BBFF;
+}
+.frame-hidden {
+  display: none;
+}
+.pledge-button, .pledge-button:focus, .pledge-button:visited {
+  background-color: rgba(0, 172, 238, 0.8);
+  box-shadow: 0 6px rgba(0, 172, 238, 1);
+  transition: all 0.05s ease-in-out;
+}
+.pledge-button:hover {
+  background-color: rgba(213, 7, 88, 0.8);
+  box-shadow: 0 6px rgba(213, 7, 88, 1);
 }

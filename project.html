@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tennra</title>
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css" />
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/foundation.css">
 </head>
 
 <body>
@@ -22,34 +22,19 @@
             </div>
         </div>
     </nav>
-    <!-- <div class="project-container column large-10 medium-10 small-10 large-centered small-centered medium-centered">
-        <div class="row">
-            <div class="title-wrapper column large-12 medium-12 small-12">
-                <h1 class="bold text-center"> Lorem ipsum.</h1>
-            </div>
-        </div>
-        <div class="project-details-container column large-12 small-12 medium-12">
-            <div class="row">
-                <div class="column large-6 medium-6 small-6">
-                    <div class="flex-video widescreen youtube">
-                        <iframe width="640" height="315" src="https://www.youtube.com/embed/8b3i5xanbsI" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="column large-6 medium-6 small-6">
-                </div>
-            </div>
-        </div>
-    </div>
- -->
     <div class="project-container column large-12 medium-12 small-12 large-centered small-centered medium-centered">
         <div class="project-details-wrapper">
             <div class="project-description-container column large-7 medium-7 small-7">
                 <div class="image-container column large-10 medium-10 small-10 large-centered medium-centered small-centered">
                     <div class="flex-video widescreen youtube">
-                        <iframe width="640" height="315" src="https://www.youtube.com/embed/8b3i5xanbsI" frameborder="0" allowfullscreen></iframe>
+                        <div class="project_image">
+                            <div class="play"></div>
+                            <img src="http://www.tennra.com/photos/projects/cbd59e3082.jpg" alt="" data-src="https://www.youtube.com/embed/8b3i5xanbsI"> 
+                        </div>
+                        <iframe class="youtube-frame frame-hidden" width="640" height="315" src="https://www.youtube.com/embed/8b3i5xanbsI" data-autoplay-src="https://www.youtube.com/embed/8b3i5xanbsI?autoplay=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="column large-12 medium-12 small-12 description-container">
+                <div class="column large-12 medium-12 small-12 description-container text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aspernatur itaque dicta. Provident eligendi accusamus culpa aut facilis aliquam non, esse porro explicabo. Voluptates saepe possimus nam odio, repudiandae, error veritatis, quibusdam illo reprehenderit cum necessitatibus! Hic incidunt praesentium doloremque adipisci dicta, iusto perferendis repellat recusandae, esse alias asperiores, tempore quibusdam repellendus vero voluptatem.
                     </p>
                     <p>
@@ -62,39 +47,41 @@
             </div>
             <div class="title-container medium-5 large-5 columns">
                 <div class="title-wrapper">
-                	
-                <div class="text-center">
-                    <h2>Lorem ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ut accusantium unde, optio, maiores, ipsa nulla adipisci fugit voluptates perspiciatis, architecto nesciunt quas debitis voluptate.</p>
-                </div>
-                <div class="path-container column large-12 medium-12 small-12 medium-centered small-centered">
-                    <div class="milestone-upper-text cf">
-	                    <div class="float-left">
-	                        <h4> <strong> $300  USD </strong></h4>
-	                    </div>
-	                    <div class="float-right">
-	                        <h4> <strong> 2 Days Remaining </strong></h4>
-	                    </div>                    	
+                    <div class="text-center">
+                        <h2>Lorem ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ut accusantium unde, optio, maiores, ipsa nulla adipisci fugit voluptates perspiciatis, architecto nesciunt quas debitis voluptate.</p>
                     </div>
-                    <div class="path milestone-path">
-                        <div style="width: 30%" class="meter custom-meter completed milestone-meter"></div>
-                        <div class="milestone completed" style="left: 10%">
-                            <div class="milestone-target">
-                                <p> $100 </p>
+                    <div class="path-container column large-12 medium-12 small-12 medium-centered small-centered">
+                        <div class="milestone-upper-text cf">
+                            <div class="float-left">
+                                <h6> <strong> $300  USD </strong></h6>
+                            </div>
+                            <div class="float-right">
+                                <h6> <strong> 2 Days Remaining </strong></h6>
                             </div>
                         </div>
-                        <div class="milestone" style="left: 50%">
-                            <div class="milestone-target">
-                                <p> $500 </p>
+                        <div class="path milestone-path">
+                            <div style="width: 30%" data-path-length="30" class="meter custom-meter completed milestone-meter"></div>
+                            <div class="milestone completed" style="left: 10%" data-anchor="10">
+                                <div class="milestone-target">
+                                    <p> $100 </p>
+                                </div>
+                            </div>
+                            <div class="milestone" style="left: 50%" data-anchor="50">
+                                <div class="milestone-target">
+                                    <p> $500 </p>
+                                </div>
+                            </div>
+                            <div class="milestone" style="left: 100%" data-anchor="100">
+                                <div class="milestone-target">
+                                    <p> $1000 </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="milestone" style="left: 100%">
-                            <div class="milestone-target">
-                                <p> $1000 </p>
-                            </div>
+                        <div class="milestone-lower text-center">
+	                        <a  class="button round pledge-button"> Pledge </a>                        	
                         </div>
                     </div>
-                </div>
                 </div>
                 <div class="column large-12 medium-12 small-12 rewards-container large-centered medium-centered">
                     <dl class="accordion rewards show-for-medium-up" data-accordion="">
